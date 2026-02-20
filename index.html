@@ -185,8 +185,6 @@
       }
     ];
 
-    
-
     function SugarGame() {
       const [gameState, setGameState] = useState('start'); 
       const [currentDrinkIndex, setCurrentDrinkIndex] = useState(0);
@@ -252,7 +250,6 @@
       if (gameState === 'start') {
         return (
           <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-4 font-sans">
-            <LobbyButton />
             <div className="max-w-md w-full bg-white rounded-3xl shadow-xl p-8 text-center space-y-6 transform transition hover:scale-105">
               <div className="text-6xl animate-bounce">🍬</div>
               <h1 className="text-3xl font-extrabold text-gray-800">含糖飲料疊疊樂</h1>
@@ -275,7 +272,6 @@
       if (gameState === 'edu-teach') {
         return (
           <div className="min-h-screen bg-blue-50 flex flex-col items-center p-4 font-sans overflow-y-auto pb-20">
-            <LobbyButton />
             <div className="max-w-md w-full space-y-6 mt-8">
               <div className="bg-white rounded-3xl shadow-lg p-6 text-center">
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">挑戰完成！</h2>
@@ -337,7 +333,6 @@
       if (gameState === 'edu-practice') {
         return (
           <div className="min-h-screen bg-indigo-50 flex flex-col items-center p-4 font-sans overflow-y-auto pb-20">
-            <LobbyButton />
             <div className="max-w-md w-full space-y-6 mt-8">
               <div className="bg-white rounded-3xl shadow-lg p-6">
                 <h3 className="text-xl font-bold text-indigo-800 mb-4 flex items-center gap-2">
@@ -423,7 +418,6 @@
       if (gameState === 'edu-summary') {
         return (
           <div className="min-h-screen bg-orange-50 flex flex-col items-center p-4 font-sans overflow-y-auto pb-20">
-            <LobbyButton />
             <div className="max-w-md w-full space-y-6 mt-8">
               
               <div className="bg-white rounded-3xl shadow-lg p-6 text-center border-t-8 border-orange-500">
@@ -497,7 +491,6 @@
 
       return (
         <div className={`min-h-screen ${currentDrink.color} flex flex-col items-center p-4 font-sans transition-colors duration-500`}>
-          <LobbyButton />
           <div className="max-w-md w-full flex-1 flex flex-col mt-4 mb-20">
             
             <div className="flex justify-between items-center mb-6">
